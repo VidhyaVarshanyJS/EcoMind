@@ -1,5 +1,4 @@
 import { createSchemas } from '@/utils/signSchemas';
-// import { createSchemas } from '../utils/signSchemas';
 import { useEffect } from 'react';
 // import { createSchemas } from '../utils/signSchemas';
 
@@ -8,7 +7,6 @@ const CreateSchemas = () => {
     const run = async () => {
       try {
         const schemaIds = await createSchemas();
-        // const schemaIds = "1234"; // hardcoded
         console.log('Schema IDs:', schemaIds);
         alert(`Schema IDs: ${JSON.stringify(schemaIds)}`);
       } catch (error) {
